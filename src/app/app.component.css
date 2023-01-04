@@ -1,0 +1,93 @@
+body, html{
+    background-color: #3884D8;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 20px solid #000;
+    height: auto;
+    display: grid;
+    /*gap: 50px;
+
+    grid-template-areas: "name" 
+                         "info crono"
+                         "photo links";
+                         justify-content: center;*/
+                         
+}
+
+img{
+    width: 100%;
+    border: none;
+}
+
+.container itens-name{
+    display: flex;
+    justify-content: center;
+}
+
+.itens-general{
+
+        max-width: 1000px;
+        min-width: 200px;
+        margin: 0 auto;
+        border: 20px solid rgb(205, 76, 76);
+        height: auto;
+        display: grid;
+        gap: 50px;
+        /*grid-template-rows: 1fr 1fr 1fr 1fr ;*/
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+        grid-template-areas: "name" 
+                             "info crono"
+                             "photo links";
+                             justify-content: center
+    
+}
+
+.itens-name{
+    width: 500px;
+    height: 108px;
+    background-color: #5899D9; /*#5899D9*/
+    border-radius: 10px;
+    grid-area: "name";
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itens-info{
+    width: 583px;
+    height: 428px;
+    background-color: #5899D9; /*#5899D9*/
+    border-radius: 10px;
+    grid-area: "info";
+}
+
+.itens-crono{
+    width: 583px;
+    height: 428px;
+    background-color: #5899D9; /*#5899D9*/
+    border-radius: 10px;
+    grid-area: "crono";
+}
+
+.itens-photo{
+    width: 583px;
+    height: 593px;
+    background-color: #5899D9; /*#5899D9*/
+    border-radius: 10px;
+    grid-area: "photo";
+}
+
+.itens-links{
+    width: 583px;
+    height: 593px;
+    background-color: #5899D9; /*#5899D9*/
+    border-radius: 10px;
+    grid-area: "links";
+}
